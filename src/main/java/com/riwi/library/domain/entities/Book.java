@@ -42,7 +42,7 @@ public class Book {
     @EqualsAndHashCode.Exclude // @121312312
     @OneToMany(
         fetch = FetchType.EAGER,
-        mappedBy = "book_id",
+        mappedBy = "book",
         cascade = CascadeType.ALL,
         orphanRemoval = false  
     )
@@ -52,7 +52,7 @@ public class Book {
     @EqualsAndHashCode.Exclude // @121312312
     @OneToMany(
         fetch = FetchType.EAGER,
-        mappedBy = "book_id",
+        mappedBy = "book",
         cascade = CascadeType.ALL,
         orphanRemoval = false  
     )

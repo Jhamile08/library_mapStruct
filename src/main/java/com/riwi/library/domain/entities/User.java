@@ -43,7 +43,7 @@ public class User {
     @EqualsAndHashCode.Exclude // @121312312
     @OneToMany(
         fetch = FetchType.EAGER,
-        mappedBy = "user_id",
+        mappedBy = "user",
         cascade = CascadeType.ALL,
         orphanRemoval = false  
     )
@@ -53,7 +53,7 @@ public class User {
     @EqualsAndHashCode.Exclude // @121312312
     @OneToMany(
         fetch = FetchType.EAGER,
-        mappedBy = "user_id",
+        mappedBy = "user",
         cascade = CascadeType.ALL,
         orphanRemoval = false  
     )
